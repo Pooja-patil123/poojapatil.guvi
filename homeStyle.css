@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    
+}
+header{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    font-size: large;
+}
+#logo{
+    line-height: 80px;
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    font-size:50px;
+    font-weight: bold;
+    color: #fff;
+}
+#logo:hover{
+    color: #ecf0f1;
+}
+#logo-s{
+    color: #ecf0f1;
+    margin-left: 10px;
+}
+#logo:hover #logo-s{
+    color: #3a8dc5;
+}
+
+.buttons{
+    float: right;
+}
+.Home{
+    font-style:oblique;
+    font-weight: bold;
+    text-decoration:none;
+}
+.service{
+    
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.pricing{
+    
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.act{
+    font-style: italic;
+    float: right;
+    padding: 130px 50px;
+    color: rgb(0, 0, 0);
+    
+}
+.Home :hover{
+    color: #3498db;
+    background-color: none;
+}
+.service :hover{
+    color: #3498db;
+    background-color: none;
+}
+.pricing :hover{
+    color: #3498db;
+    background-color: none;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+.myslider{
+    height: 655px;
+    display: none;
+    overflow: hidden;
+}
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -550%);
+    font-size: 50px;
+    padding: 3px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.1s;
+    user-select: none;
+}
+.prev:hover, .next:hover{
+    color: #ecf0f1;
+}
+.next{
+    right: 0;
+}
+.dotsbox{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: px;
+    cursor: pointer;
+}
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: 0.8}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: 0.8}
+    to{opacity: 1}
+}
+.txt{
+    position: absolute;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left: 15%;
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    animation-name: posi;
+    animation-duration: 2s;
+    z-index: 1;
+}
+@-webkit-keyframes posi{
+    from{left: 25;}
+    to{left: 15;}
+}
+@keyframes posi{
+    from{left: 25;}
+    to{left: 15;}
+} 
+.txt h1{
+    color: #3498db;
+    font-weight: bold;
+    margin: 20px;
+}
+img{
+    transform: scale(1.5, 1.5);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 15s;
+}
+@-webkit-keyframes zoomin {
+    from{transform: scale(1, 1);}
+    to{transform: scale(1.5, 1.5);}
+}
+@keyframes zoomin {
+    from{transform: scale(1, 1);}
+    to{transform: scale(1.5, 1.5);}
+}
+@media screen and (max-width: 800px) {
+    .myslider{
+        height: 500px;
+    }
+    .txt{
+        line-height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-animation-name: posi2;
+        -webkit-animation-duration: 2s;
+        animation-name: posi2;
+        animation-duration: 2s;
+    }
+    @-webkit-keyframes posi2 {
+        from{top: 35%;}
+        to{top: 50%;}
+    }
+    @keyframes posi2 {
+        from{top: 35%;}
+        to{top: 50%;}
+    }
+    .txt h1{
+        font-size: 40px;
+    }
+  }
+@media screen and (max-width: 520px) {
+    .txt h1{
+        font-size: 30px;
+    }
+    .Home{
+        margin-right: 20px;
+    }
+    .pricing{
+        font-size: 12px;
+    }
+}
+
+.text{
+    display: inline;
+    z-index: 20;
+    position: absolute;
+    font-size:100px;
+    top: 35%;
+    left: 25%;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+.container img{
+    width: 600px;
+    height: 400px;
+}
+.btnn{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-350%, 300%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 5;
+}
+
+.container .btnn:hover{
+    background-color: black;
+}

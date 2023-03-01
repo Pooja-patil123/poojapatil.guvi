@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #74b0f5;
+    height: 100px;
+    position: sticky;
+    top: 0%;
+    z-index: 25;
+}
+
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.header a.logo {
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: white;
+    color: black;
+}
+
+.header-right {
+    float: right;
+}
+
+.icon-location {
+    background: url("https://img.icons8.com/material-outlined/24/undefined/marker.png") no-repeat left;
+    background-size: 20px;
+    padding-left: 25px;
+    height: 48px;
+    resize: vertical;
+    margin: 16px;
+    overflow: visible;
+    font-size: larger;
+}
+
+.icon-location::placeholder {
+    font-size: 20px;
+}
+
+.icon-search {
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+    height: 48px;
+    margin-left: 36%;
+    background-color: white;
+    resize: vertical;
+    margin: 16px;
+    overflow: visible;
+    font-size: larger;
+}
+
+.icon-search::placeholder {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1040px) {
+    .header {
+        height: 5%;
+        position: static;
+        z-index: 10;
+    }
+    .logo {
+        height: 5px;
+    }
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+    .icon-search {
+        float: none;
+        display: block;
+        text-align: left;
+        height: 35px;
+        background-color: white;
+        margin-left: 3%;
+        width: 264px;
+    }
+    .icon-location {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .select {
+        font-size: 20px;
+    }
+    #cities {
+        height: 15px;
+        overflow: visible;
+    }
+    #cities::placeholder {
+        font-size: 10px;
+    }
+}
+
+.s p {
+    font-size: 43px;
+    text-align: center;
+    color: #333;
+    padding-top: 3%;
+}
+
+.table-box {
+    margin: 50px auto;
+}
+
+.table-row {
+    display: table;
+    width: 60%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
+}
+
+.table-head {
+    background: #5eabeb;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.table-head .table-cell {
+    border-right: none;
+}
+
+.table-cell {
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    vertical-align: middle;
+}
+
+.first-cell {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.last-cell {
+    border-right: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+@media only screen and (max-width: 400px) {
+    .table-row {
+        font-size: 11px;
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: black;
+}
+
+footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .container .sec h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .sec h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: yellow;
+}
+
+footer .container .sec p {
+    color: white;
+}
+
+.sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.sci li a:hover {
+    background: #ffeb3b;
+}
+
+.sci li a .fa {
+    color: black;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style: none;
+}
+
+.quicklinks li a {
+    color: #f7f7f7;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: #ffeb3b;
+}
+
+.info {
+    position: relative;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+.info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+}
+
+.info li span {
+    color: #fff;
+}
+
+.info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #ffeb3b;
+}
+
+@media(max-width:991px) {
+    footer {
+        padding: 40px;
+    }
+    footer .container {
+        grid-template-columns: (2, 1fr);
+    }
+}
+
+@media(max-width:768px) {
+    footer {
+        padding: 40px;
+    }
+    footer .container {
+        grid-template-columns: (1, 1fr);
+    }
+}
